@@ -1,0 +1,279 @@
+/* ===== GLOBAL STYLES ===== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: "Segoe UI", Arial, sans-serif;
+line-height:1.6;
+background:#ffffff;
+color:#222;
+}
+
+/* ===== COLOR VARIABLES ===== */
+
+:root{
+--blue:#0f2a44;
+--gold:#c9a227;
+--black:#111;
+--light:#f5f5f5;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+background:var(--blue);
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+font-weight:600;
+font-size:18px;
+}
+
+.logo img{
+height:42px;
+margin-right:10px;
+border-radius: 20px
+}
+
+nav a{
+color:white;
+margin-left:28px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:var(--gold);
+}
+
+/* ===== HERO ===== */
+
+.hero{
+padding:100px 20px;
+text-align:center;
+background:linear-gradient(rgba(15,42,68,0.9),rgba(19, 77, 132, 0.9));
+color:white;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero h3{
+color:var(--gold);
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+margin-bottom:15px;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn{
+display:inline-block;
+background:var(--gold);
+color:black;
+padding:12px 26px;
+margin:10px;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#e2b93a;
+transform:translateY(-2px);
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.whatsapp:hover{
+background:#1ebd5a;
+}
+
+/* ===== SECTION ===== */
+
+section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+color:var(--blue);
+}
+
+/* ===== GRID SYSTEM ===== */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+/* ===== MISSION & VISION BOXES ===== */
+
+.mission .grid div{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+border-top:4px solid var(--gold);
+transition:0.3s;
+}
+
+.mission .grid div:hover{
+transform:translateY(-5px);
+}
+
+/* ===== PRACTICE AREA BOXES ===== */
+
+#practice .grid div{
+background:var(--light);
+padding:25px;
+border-radius:8px;
+text-align:center;
+font-weight:600;
+border-left:5px solid var(--gold);
+transition:0.3s;
+}
+
+#practice .grid div:hover{
+background:white;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transform:translateY(-4px);
+}
+
+/* ===== SERVICES CARDS ===== */
+
+section .grid div h3{
+color:var(--blue);
+margin-bottom:10px;
+}
+
+section .grid div{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+section .grid div:hover{
+transform:translateY(-5px);
+}
+
+/* ===== WHY CHOOSE US ===== */
+
+#why ul{
+max-width:600px;
+margin:auto;
+list-style:none;
+font-size:18px;
+}
+
+#why li{
+background:white;
+padding:15px;
+margin-bottom:12px;
+border-left:5px solid var(--gold);
+box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* ===== FAQ ===== */
+
+.faq h3{
+color:var(--blue);
+margin-top:20px;
+}
+
+.faq p{
+margin-bottom:10px;
+}
+
+/* ===== CONTACT SECTION ===== */
+
+#contact{
+text-align:center;
+}
+
+.map{
+margin-top:30px;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+background:var(--black);
+color:white;
+text-align:center;
+padding:30px 20px;
+margin-top:40px;
+}
+
+footer a{
+color:var(--gold);
+margin:0 10px;
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+align-items:flex-start;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+margin-left:0;
+margin-right:15px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+section{
+padding:50px 15px;
+}
+
+}
